@@ -1,0 +1,137 @@
+:root {
+    --bg: #f3f7ff;
+    --card: #ffffff;
+    --primary: #275efe;
+    --text: #1f2937;
+    --muted: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #eef3ff 0%, #f9fbff 100%);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 56px 20px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+    color: #fff;
+    box-shadow: 0 6px 22px rgba(37, 99, 235, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    letter-spacing: 0.4px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #dbeafe;
+    font-size: 1rem;
+}
+
+section {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 30px;
+    background: var(--card);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #1e40af;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+#about img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #dbeafe;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+#skills ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+#skills li {
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.project {
+    background: #f8faff;
+    border: 1px solid #dbeafe;
+    padding: 18px;
+    margin-top: 12px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.12);
+}
+
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1d4ed8;
+}
+
+#contact p {
+    margin: 8px 0;
+    color: var(--muted);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 24px;
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+    section {
+        margin: 16px;
+        padding: 22px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        width: 145px;
+        height: 145px;
+    }
+}
