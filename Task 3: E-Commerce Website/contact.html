@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoplio | Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">S</span>
+        <span>Shoplio</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+        <a class="cart-pill" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-head">
+      <div>
+        <h1>Contact Us</h1>
+        <p>Questions about products, orders, or partnerships? Send us a message.</p>
+      </div>
+    </div>
+
+    <form class="form" data-contact-form>
+      <label>
+        Full name
+        <input class="input" type="text" name="name" required>
+      </label>
+      <label>
+        Email address
+        <input class="input" type="email" name="email" required>
+      </label>
+      <label>
+        Subject
+        <input class="input" type="text" name="subject" required>
+      </label>
+      <label>
+        Message
+        <textarea class="textarea" name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <p class="notice" data-contact-notice hidden>Thanks for reaching out. We will get back to you soon.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <small>© 2026 Shoplio. All rights reserved.</small>
+      <small>Support hours: Mon-Sat, 8:00 AM to 8:00 PM.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

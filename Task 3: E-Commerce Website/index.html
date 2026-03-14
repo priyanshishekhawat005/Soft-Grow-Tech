@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoplio | Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">S</span>
+        <span>Shoplio</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="cart-pill" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="reveal">
+        <h1>Find your next favorite everyday essential.</h1>
+        <p>Discover premium picks across tech, lifestyle, and home. Shop with a fast, clean experience and keep track of your cart across pages.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="products.html">Shop all products</a>
+          <a class="btn btn-secondary" href="contact.html">Need help?</a>
+        </div>
+      </div>
+      <figure class="hero-art reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1400&q=80" alt="Stylish products displayed on a desk">
+      </figure>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Featured picks</h2>
+          <p>Hand-selected products trending this week.</p>
+        </div>
+        <a class="btn btn-secondary" href="products.html">View full catalog</a>
+      </div>
+      <div class="card-grid" data-featured-products></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <small>© 2026 Shoplio. All rights reserved.</small>
+      <small>Built as a responsive multi-page e-commerce experience.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
